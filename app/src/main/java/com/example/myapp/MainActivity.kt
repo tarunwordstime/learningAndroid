@@ -9,7 +9,7 @@ import android.widget.Button
 class MainActivity : AppCompatActivity() {
     lateinit var newScreen: Button
     lateinit var openWebPage: Button
-
+    lateinit var webPage: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(Intent.ACTION_VIEW)
             intent.setData(Uri.parse("https://www.sydney.com/things-to-do/fashion-and-shopping"))
             startActivity(intent)
+        }
+        webPage = findViewById(R.id.webPage)
+        webPage.setOnClickListener {
+            var screen = Intent(this, WebViewPage::class.java)
+            startActivity(screen)
         }
     }
 }

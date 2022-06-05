@@ -24,6 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Welcome" />
+        <activity android:name=".WebPage" />
+
     </application>
 
 </manifest>

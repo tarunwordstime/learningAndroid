@@ -34,4 +34,9 @@
         android:layout_height="wrap_content"
         android:text="Open A Web Page" />
 
+    <Button
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebView" />
 </LinearLayout>
